@@ -1,0 +1,68 @@
+<div class="container w-50 mt-4">
+    <form (ngSubmit)="addReceta()">
+      <!-- Título del formulario -->
+      <h2 class="mb-4 text-center">Añadir Nueva Receta</h2>
+  
+      <!-- Campo: Nombre de la receta -->
+      <div class="mb-3">
+        <label for="nombre" class="form-label fw-bold">Nombre de la receta</label>
+        <input
+          type="text"
+          [(ngModel)]="receta.nombreReceta"
+          class="form-control"
+          id="nombre"
+          name="nombre"
+          placeholder="Ejemplo: Ensalada César"
+          required
+        />
+      </div>
+  
+      <!-- Campo: Ingredientes -->
+      <div class="mb-3">
+        <label for="ingredientes" class="form-label fw-bold">Ingredientes</label>
+        <input
+          type="text"
+          [(ngModel)]="receta.ingredientes"
+          class="form-control"
+          id="ingredientes"
+          name="ingredientes"
+          placeholder="Ejemplo: Lechuga, crutones, queso parmesano"
+          required
+        />
+      </div>
+  
+      <!-- Campo: Pasos de preparación -->
+      <div class="mb-3">
+        <label for="preparacion" class="form-label fw-bold">Pasos de preparación</label>
+        <textarea
+          [(ngModel)]="receta.preparacion"
+          class="form-control"
+          id="preparacion"
+          name="preparacion"
+          rows="4"
+          placeholder="Ejemplo: 1. Lavar los ingredientes..."
+          required
+        ></textarea>
+      </div>
+  
+      <!-- Campo: ID -->
+      <div class="mb-3">
+        <label for="id" class="form-label fw-bold">ID de la receta</label>
+        <input
+          type="text"
+          [(ngModel)]="receta.id"
+          class="form-control"
+          id="id"
+          name="id"
+          placeholder="Ejemplo: 001"
+          required
+        />
+      </div>
+  
+      <!-- Botón de envío -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary w-100">Guardar Receta</button>
+      </div>
+    </form>
+  </div>
+  

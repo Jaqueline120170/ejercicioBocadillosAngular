@@ -1,0 +1,13 @@
+<h2>Listado de Recetas</h2>
+<ul class="list-group">
+  @if(recetas.length > 0) {
+    @for (receta of recetas; track $index) {
+      <li class="list-group-item">
+        {{receta.nombreReceta}} 
+      </li>
+    }
+  }@else {
+    <li class="list-group-item">No hay recetas registradas.</li>
+  }
+
+</ul>

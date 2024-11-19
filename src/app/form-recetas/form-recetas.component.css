@@ -1,0 +1,21 @@
+/* Opcional: Estilo personalizado para el formulario */
+.container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  button {
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
